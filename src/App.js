@@ -32,8 +32,7 @@ function App() {
                 <div className="top">
                     <div className="location">
                         <p> {data.name} </p>
-                        {/*<p> San Diego</p> //{data.name} from weather.json}*/}
-                    </div>
+                   </div>
                     <div className="temp">
                         {data.main ? <h1>{data.main.temp.toFixed()}°F</h1> : null}
                         {/*<h1> 80°F</h1>*/}
