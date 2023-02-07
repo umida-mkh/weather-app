@@ -8,9 +8,6 @@ function App() {
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=56cd2eb753d30ec3a17740ec4e20b175`
 
-    //const url = "https://api.openweathermap.org/data/2.5/weather?q=san%20diego&appid=56cd2eb753d30ec3a17740ec4e20b175"
-    //instead of city(San Diego) = ${location}, added &units=imperial(units of measurement) param for API
-
     const searchLocation = (event) => {
         if (event.key === "Enter") {
             axios.get(url).then((response) => {
